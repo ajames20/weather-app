@@ -2,7 +2,7 @@ const axios = require('axios');
 const weather = require('./weather');
 
 exports.getLocation = function location() {
-  const ipAddress = 'http://freegeoip.net/json/';
+  const ipAddress = 'https://freegeoip.net/json/';
   axios
     .get(ipAddress)
     .then(response => {
