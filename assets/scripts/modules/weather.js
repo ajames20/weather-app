@@ -1,6 +1,9 @@
 const axios = require('axios');
 
 exports.getWeather = (lat, lng) => {
+  const config = {
+    headers: { 'Access-Control-Allow-Origin': '*' },
+  };
   const uri = `https://api.darksky.net/forecast/e3dc1508c16f644095ba9353d7b468a8/${lat},${lng}`;
   const icon = new Skycons({ color: '#333333' });
   const locationForecast = document.getElementById('location-forecast');
@@ -11,7 +14,7 @@ exports.getWeather = (lat, lng) => {
   };
 
   axios
-    .get(uri)
+    .get(uri, config)
     .then(weatherData => {
       console.log(weatherData);
       initDOM(weatherData);

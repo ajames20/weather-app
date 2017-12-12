@@ -2,7 +2,7 @@
 
 Front-end Web Development app to display weather in fahrenheit and celsius based on user location.
 
-[Demo](http://getting-the-weather-for-you.surge.sh/)
+[Demo](https://getting-the-weather-for-you.surge.sh/)
 
 ## Open Project Locally
 
