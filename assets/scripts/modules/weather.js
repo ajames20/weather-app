@@ -7,7 +7,7 @@ exports.getWeather = (lat, lng) => {
   const locationTemp = document.getElementById('location-temperature');
   const weeklyForecast = document.getElementById('weekly-forecast');
   const options = {
-    weekday: 'long',
+    weekday: 'long'
   };
 
   axios
@@ -30,7 +30,6 @@ exports.getWeather = (lat, lng) => {
             <span class="low"> ${Math.round(day.temperatureMin)}° &darr;</span>
             <span class="high">${Math.round(day.temperatureMax)}° &uarr;</span>
             <canvas class="weekly__forecast--icon" id="weekly-icon-${i}" width="30" height="30"></canvas>
-            <hr/>
           </li>
       `
       )
