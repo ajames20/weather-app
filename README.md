@@ -21,4 +21,4 @@ Use third party API to display weather data based on location.
 
 ## Resources
 
-[DarkSky API]](https://darksky.net/)
+[DarkSky API](https://darksky.net/)
