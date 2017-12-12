@@ -1,0 +1,26 @@
+.header {
+  font-size: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 16rem 1rem;
+
+  & span {
+    margin: 0 1rem;
+  }
+  &--button {
+    background-color: transparent;
+    border-style: none;
+    outline: transparent;
+    color: inherit;
+    font-size: inherit;
+    margin: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.active {
+  color: #3498db;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <script async src="https://rawgit.com/darkskyapp/skycons/master/skycons.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header" id="weather-header">
+    <button class="header--button active" id="fahrenheit-button">F</button>
+    <span>/</span>
+    <button class="header--button" id="celsius-button">C</button>
+  </header>
+
+  <main class="weather-section">
+    <section class="current-weather">
+      <h1 class="current-weather--city" id="location-city"></h1>
+      <p class="current-weather--country" id="location-country"></p>
+      <canvas id="icon" width="300" height="300"></canvas>
+      <p class="current-weather--temperature" id="location-temperature"></p>
+      <p class="current-weather--forecast" id="location-forecast"></p>
+
+    </section>
+    <aside class="weekly-weather">
+      <p class="weekly-weather__subtitle">Weekday Forecast</p>
+      <div>
+        <ul class="weekly__forecast--list" id="weekly-forecast">
+        </ul>
+      </div>
+    </aside>
+  </main>
+  <script src="assets/scripts/index.js"></script>
+</body>
+
+</html>

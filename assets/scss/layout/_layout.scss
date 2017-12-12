@@ -1,0 +1,28 @@
+.weather-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 56px);
+  margin-right: 8rem;
+}
+
+.current-weather {
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.weekly-weather {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 30rem;
+  height: calc(100vh - 56px);
+  overflow: scroll;
+
+  &__subtitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
